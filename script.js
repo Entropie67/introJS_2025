@@ -3,5 +3,21 @@
 let btn = document.querySelector('#btn');
 
 btn.addEventListener('click', (e) => {
-    alert("coucou");
-})
+    let img = document.querySelector('#lss');
+    if (img.style.display == 'none') {
+        img.style.display = 'block';
+    }else{
+        img.style.display = 'none';
+    }
+
+});
+// ------------------------
+
+
+let imgs = document.querySelector('#images');
+
+// Une petite boucle :
+
+for (let i = 0; i < 10; i++) {
+    imgs.innerHTML += `<p>Images ${i}</p>`;
+}
