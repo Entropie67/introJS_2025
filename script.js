@@ -20,4 +20,5 @@ let imgs = document.querySelector('#images');
 
 for (let i = 0; i < 10; i++) {
     imgs.innerHTML += `<p>Images ${i}</p>`;
+    imgs.innerHTML += `<img src="images/${i}.jpg">`;
 }
