@@ -11,3 +11,11 @@ h1 {
     width: 50%;
 }
 
+.cards {
+    border-radius: 10px;
+    width: 200px;
+}
+#images {
+    display: flex;
+    justify-content: space-around;
+}
