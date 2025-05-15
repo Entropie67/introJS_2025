@@ -19,3 +19,28 @@ h1 {
     display: flex;
     justify-content: space-around;
 }
+#btn-container {
+    width: 50%;
+    padding: 20px 30px;
+    font-size: 1.5rem; /* texte bien visible */
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color: white;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* dégradé classe */
+    border: none;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#btn-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #a777e3, #6e8efb); /* inversion subtile */
+}

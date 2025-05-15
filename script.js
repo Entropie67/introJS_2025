@@ -9,7 +9,7 @@ for (let i = 0; i < 5; i++) {
     img.addEventListener('click', () => {
         let nombre = Math.floor(Math.random() * 10) + 1;
         console.log(nombre);
-        img.src = `images/${nombre}.jpg`;
+        img.src = `images/${nombre}.png`;
 
     });
     boite.appendChild(img);
