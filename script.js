@@ -1,6 +1,6 @@
 
 let boite = document.querySelector('#images');
-
+let compteur = 0
 for (let i = 0; i < 5; i++) {
     let img = document.createElement('img');
     img.src = 'images/dos.png';
@@ -9,12 +9,11 @@ for (let i = 0; i < 5; i++) {
     img.addEventListener('click', () => {
         if (img.src.includes('images/dos.png')) {
             let nombre = Math.floor(Math.random() * 10) + 1;
-            console.log(nombre);
             img.src = `images/${nombre}.png`;
+            compteur++;
         }else {
-            alert('tricheur');
+            alert('Tricheur !');
         }
-
     });
     boite.appendChild(img);
 }
