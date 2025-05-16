@@ -1,6 +1,7 @@
 
 let boite = document.querySelector('#images');
-let compteur = 0
+let compteur = 0;
+let cartes = []; // tableau vide
 for (let i = 0; i < 5; i++) {
     let img = document.createElement('img');
     img.src = 'images/dos.png';
@@ -9,13 +10,35 @@ for (let i = 0; i < 5; i++) {
     img.addEventListener('click', () => {
         if (img.src.includes('images/dos.png')) {
             let nombre = Math.floor(Math.random() * 10) + 1;
+            cartes.push(nombre); // On ajoute la carte
+            console.log(cartes);
             img.src = `images/${nombre}.png`;
             compteur++;
+            if (compteur == 5){
+                let v = verif(cartes);
+                console.log(v);
+            }
         }else {
             alert('Tricheur !');
         }
     });
     boite.appendChild(img);
 }
+
+const verif = (tab) => {
+        let tabcompteur = [0, 0, 0, 0, 0];
+        for (let i = 0; i < tab.length; i++) {
+            for (let j = 0; j < tab.length; j++) {
+                if (tab[j] == tab[i]){
+                    tabcompteur[i] += 1;
+                    if (tabcompteur[i] == 3){
+                        return tabcompteur[i];
+                    }
+                }
+            }
+        }
+        return false;
+}
+
 
 
