@@ -25,13 +25,13 @@ const personnages = {
     "etoiles": 2
   },
   "6": {
-    "nom": "Alma Judikhali",
-    "chemin": "images/Alma Judikhali.png",
+    "nom": "Cha",
+    "chemin": "images/Cha.png",
     "etoiles": 2
   },
   "7": {
-    "nom": "Alpha",
-    "chemin": "images/Alpha.png",
+    "nom": "Wednesday Addams",
+    "chemin": "images/Wednesday Addams.png",
     "etoiles": 2
   },
   "8": {
@@ -40,8 +40,8 @@ const personnages = {
     "etoiles": 4
   },
   "9": {
-    "nom": "Anna Liebert",
-    "chemin": "images/Anna Liebert.png",
+    "nom": "Johan Liebert",
+    "chemin": "images/Johan Liebert.png",
     "etoiles": 2
   },
   "10": {
@@ -50,8 +50,8 @@ const personnages = {
     "etoiles": 5
   },
   "11": {
-    "nom": "Hela",
-    "chemin": "images/Hela.png",
+    "nom": "Shikamaru",
+    "chemin": "images/Shikamaru.png",
     "etoiles": 2
   },
   "12": {
@@ -60,9 +60,9 @@ const personnages = {
     "etoiles": 4
   },
   "13": {
-    "nom": "Asuna",
-    "chemin": "images/Asuna.png",
-    "etoiles": 3
+    "nom": "Raien",
+    "chemin": "images/Raiden.png",
+    "etoiles": 5
   },
   "14": {
     "nom": "Yumeko",
@@ -107,6 +107,16 @@ const personnages = {
   "22": {
     "nom": "Kiyotaka Ayanokōji",
     "chemin": "images/Kiyotaka Ayanokōji.png",
+    "etoiles": 5
+  },
+  "23": {
+    "nom": "Lelouch",
+    "chemin": "images/Lelouch.png",
+    "etoiles": 5
+  },
+  "25": {
+    "nom": "Makima",
+    "chemin": "images/Makima.png",
     "etoiles": 5
   }
 }
