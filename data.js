@@ -5,9 +5,9 @@ const personnages = {
     "etoiles": 3
   },
   "2": {
-    "nom": "Agatha Harkness",
-    "chemin": "images/Agatha Harkness.png",
-    "etoiles": 2
+    "nom": "Wanda",
+    "chemin": "images/Wanda.png",
+    "etoiles": 5
   },
   "3": {
     "nom": "Akame",
@@ -20,8 +20,8 @@ const personnages = {
     "etoiles": 4
   },
   "5": {
-    "nom": "Albedo",
-    "chemin": "images/Albedo.png",
+    "nom": "Hermione",
+    "chemin": "images/Hermione.png",
     "etoiles": 2
   },
   "6": {
@@ -35,8 +35,8 @@ const personnages = {
     "etoiles": 2
   },
   "8": {
-    "nom": "Anita",
-    "chemin": "images/Anita.png",
+    "nom": "Song Yi",
+    "chemin": "images/Song Yi.png",
     "etoiles": 4
   },
   "9": {
@@ -45,9 +45,9 @@ const personnages = {
     "etoiles": 2
   },
   "10": {
-    "nom": "antman",
-    "chemin": "images/antman.png",
-    "etoiles": 1
+    "nom": "Wang Churan",
+    "chemin": "images/Wang churan.png",
+    "etoiles": 5
   },
   "11": {
     "nom": "Hela",
@@ -65,38 +65,48 @@ const personnages = {
     "etoiles": 3
   },
   "14": {
-    "nom": "Athéna",
-    "chemin": "images/Athéna.png",
-    "etoiles": 4
+    "nom": "Yumeko",
+    "chemin": "images/Yumeko.png",
+    "etoiles": 5
   },
   "15": {
     "nom": "Azula",
     "chemin": "images/Azula.png",
-    "etoiles": 5
-  },
-  "16": {
-    "nom": "Batgirl",
-    "chemin": "images/Batgirl.png",
     "etoiles": 4
   },
+  "16": {
+    "nom": "Light",
+    "chemin": "images/Light.png",
+    "etoiles": 5
+  },
   "17": {
-    "nom": "Beta",
-    "chemin": "images/Beta.png",
+    "nom": "Thanos",
+    "chemin": "images/Thanos.png",
     "etoiles": 3
   },
   "18": {
-    "nom": "Black Cat",
-    "chemin": "images/Black Cat.png",
+    "nom": "L",
+    "chemin": "images/L.png",
     "etoiles": 5
   },
   "19": {
     "nom": "Boa Hancock",
     "chemin": "images/Boa Hancock.png",
-    "etoiles": 5
+    "etoiles": 3
   },
   "20": {
-    "nom": "Bruce Banner",
-    "chemin": "images/Bruce Banner.png",
-    "etoiles": 3
+    "nom": "Yor",
+    "chemin": "images/Yor.png",
+    "etoiles": 5
+  },
+  "21": {
+    "nom": "Itachi Uchiha",
+    "chemin": "images/Itachi Uchiha.png",
+    "etoiles": 5
+  },
+  "22": {
+    "nom": "Kiyotaka Ayanokōji",
+    "chemin": "images/Kiyotaka Ayanokōji.png",
+    "etoiles": 5
   }
 }
