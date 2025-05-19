@@ -85,3 +85,48 @@ h1 {
     text-shadow: 1px 1px 2px black;
     margin-top: 5px;
 }
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: gold;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+.stars.glow-5 {
+    color: #ffe066;
+    text-shadow:
+            0 0 5px #ffd700,
+            0 0 10px #ffcc00,
+            0 0 15px #ffbb00,
+            0 0 20px #ffaa00,
+            0 0 25px #ff9900;
+    animation: pulseGlow 1.5s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    from {
+        text-shadow:
+                0 0 5px #ffd700,
+                0 0 10px #ffcc00,
+                0 0 15px #ffbb00,
+                0 0 20px #ffaa00,
+                0 0 25px #ff9900;
+        transform: scale(1);
+    }
+    to {
+        text-shadow:
+                0 0 10px #fff176,
+                0 0 20px #ffeb3b,
+                0 0 30px #fff176,
+                0 0 40px #ffca28;
+        transform: scale(1.05);
+    }
+}

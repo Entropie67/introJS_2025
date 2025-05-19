@@ -7,6 +7,7 @@ const start = () => {
     const cles = Object.keys(personnages);
     let compteur = 0;
     let cartes = [];
+    let gagnantAffiche = false;
 
     for (let i = 0; i < 5; i++) {
         const container = document.createElement('div');
@@ -19,7 +20,6 @@ const start = () => {
 
         const stars = document.createElement('div');
         stars.classList.add('stars');
-        stars.innerHTML = ''; // vide au départ
 
         img.addEventListener('click', () => {
             if (img.src.includes('images/dos.png')) {
@@ -30,20 +30,36 @@ const start = () => {
                 img.src = perso.chemin;
                 img.title = `${perso.nom} (${perso.etoiles}★)`;
 
-                // Ajouter les étoiles visuelles
                 stars.innerHTML = '★'.repeat(perso.etoiles) + '☆'.repeat(5 - perso.etoiles);
+                if (perso.etoiles === 5) {
+                    stars.classList.add('glow-5');
+                }
 
                 compteur++;
-                if (compteur === 5) {
+                if (compteur === 5 && !gagnantAffiche) {
                     const gagnant = verif(cartes);
                     if (gagnant) {
                         const persoGagnant = personnages[gagnant];
                         const imgGagnante = document.createElement('div');
                         imgGagnante.classList.add('card-container');
-                        imgGagnante.innerHTML = `
-                            <img class="cards" src="${persoGagnant.chemin}" title="${persoGagnant.nom} (${persoGagnant.etoiles}★)">
-                            <div class="stars">★`.repeat(persoGagnant.etoiles) + `☆`.repeat(5 - persoGagnant.etoiles) + `</div>`;
+
+                        const imgEl = document.createElement('img');
+                        imgEl.src = persoGagnant.chemin;
+                        imgEl.classList.add('cards');
+                        imgEl.title = `${persoGagnant.nom} (${persoGagnant.etoiles}★)`;
+
+                        const starsG = document.createElement('div');
+                        starsG.classList.add('stars');
+                        starsG.innerHTML = '★'.repeat(persoGagnant.etoiles) + '☆'.repeat(5 - persoGagnant.etoiles);
+                        if (persoGagnant.etoiles === 5) {
+                            starsG.classList.add('glow-5');
+                        }
+
+                        imgGagnante.appendChild(imgEl);
+                        imgGagnante.appendChild(starsG);
                         document.querySelector('#gagnante').appendChild(imgGagnante);
+
+                        gagnantAffiche = true;
                     }
                 }
             } else {
@@ -69,5 +85,3 @@ const verif = (tab) => {
 document.querySelector('#btn').addEventListener('click', () => {
     start();
 });
-
-

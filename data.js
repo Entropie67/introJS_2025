@@ -1,23 +1,23 @@
 const personnages = {
   "1": {
-    "nom": "Adriana Lima",
-    "chemin": "images/Adriana Lima.png",
-    "etoiles": 5
+    "nom": "Ciri",
+    "chemin": "images/Ciri.png",
+    "etoiles": 3
   },
   "2": {
     "nom": "Agatha Harkness",
     "chemin": "images/Agatha Harkness.png",
-    "etoiles": 4
+    "etoiles": 2
   },
   "3": {
     "nom": "Akame",
     "chemin": "images/Akame.png",
-    "etoiles": 4
+    "etoiles": 5
   },
   "4": {
     "nom": "Akeno Himejima",
     "chemin": "images/Akeno Himejima.png",
-    "etoiles": 3
+    "etoiles": 4
   },
   "5": {
     "nom": "Albedo",
@@ -50,14 +50,14 @@ const personnages = {
     "etoiles": 1
   },
   "11": {
-    "nom": "Aphrodite",
-    "chemin": "images/Aphrodite.png",
-    "etoiles": 5
+    "nom": "Hela",
+    "chemin": "images/Hela.png",
+    "etoiles": 2
   },
   "12": {
     "nom": "arlechino",
     "chemin": "images/arlechino.png",
-    "etoiles": 1
+    "etoiles": 4
   },
   "13": {
     "nom": "Asuna",
